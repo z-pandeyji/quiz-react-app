@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  background: #F5F7FB;
+}
+.connect{
+  font-size: 12px;
+  font-weight: 500;
+}
+a {
+  color: black;
+  display: contents;
+  font-family: cursive;
+  font-weight: 700;}
+a:hover {
+  font-size: 150%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.welcome-container {
+  padding: 25vh 75vh;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome--title {
+  font-size: 2rem;
+  color: black;
+  margin: 0;
+}
+
+.welcome--subtitle {
+  color: black;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.welcome--start-btn {
+  background: black;
+  border-radius: 15px;
+  border: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #F5F5F5;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.quiz--questions {
+  padding: 0 5vh 2vh 50vh;
+  list-style: none;
+  margin: 0;
+}
+.quiz--questions > .quiz--item + .quiz--item {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #DBDEF0;
+}
+
+.quiz--item > h3 {
+  font-weight: bold;
+  font-size: 23px;
+  color: black;
+}
+
+.quiz--item > div {
+  display: flex;
+  gap: 12px;
+}
+
+.quiz--item > div > button {
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 4px 20px;
+  border: none
+}
+
+.quiz--footer {
+  padding: 5vh 25vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.quiz--check {
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  width: 150px;
+  height: 45px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #F5F7FB;
 }
